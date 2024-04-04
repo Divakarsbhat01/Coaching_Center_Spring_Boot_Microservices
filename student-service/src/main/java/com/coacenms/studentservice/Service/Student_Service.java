@@ -1,0 +1,22 @@
+package com.coacenms.studentservice.Service;
+
+import com.coacenms.studentservice.Entity.Student;
+import com.coacenms.studentservice.Error_Control.Exceptions.studentNotFoundException;
+import com.coacenms.studentservice.Schemas.Student_return;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public interface Student_Service {
+    Student_return create_student(Student student);
+
+    List<Student> get_all_students();
+
+    Optional<Student> get_student_byId(int studentId) throws studentNotFoundException;
+
+    Student update_student_by_id(int studentId, Student student) throws Exception;
+
+    Boolean delete_student_by_id(int studentId);
+}

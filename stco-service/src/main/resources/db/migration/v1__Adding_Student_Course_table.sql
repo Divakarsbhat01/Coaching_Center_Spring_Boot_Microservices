@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS STUDENT_COURSE
+(
+    stco_id   NOT NULL PRIMARY KEY,
+    course_id INT NOT NULL,
+    student_id INT NOT NULL
+);

@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS TEACHER_COURSE
+(
+    teco_id   NOT NULL PRIMARY KEY,
+    course_id INT NOT NULL,
+    teacher_id INT NOT NULL
+);
